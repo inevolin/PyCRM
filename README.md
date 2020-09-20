@@ -36,7 +36,7 @@ import ocr
 your_file = './demo_files/doc1.pdf'
 text = ocr.process(your_file)
 
-# business rule
+# your business rules
 if 'CONTRACT' in text:
   ...
 else:
@@ -58,13 +58,21 @@ python3 -m pip install pillow
 ```
 
 Finally we need to adjust a setting in the file `/etc/ImageMagick-6/policy.xml`. Near the bottom you will find the line:
-```<policy domain="coder" rights="none" pattern="PDF" />```
+
+```
+<policy domain="coder" rights="none" pattern="PDF" />
+```
+
 change this to:
-```<policy domain="coder" rights="read" pattern="PDF" />```
+```
+<policy domain="coder" rights="read" pattern="PDF" />
+```
 now save and close the file.
 
 Now you can test the installation by running:
-```python3 ocr_tests.py```
+```
+python3 ocr_tests.py
+```
 This will run several OCR default tests, which should all complete successfully, if anything went wrong during the installation you should see some error messages.
 
 # Support
