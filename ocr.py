@@ -24,4 +24,12 @@ def process(file, pdf_method=0, pdf_res=200):
           os.remove(fn)
         return text
 
-        
+def clean(txt):
+  txt = "\n".join([s for s in txt.split("\n") if len(s.strip())])
+  return txt
+
+if __name__ == "__main__":
+  import sys
+  import re
+  print( clean( process(sys.argv[1]) ) )
+    
