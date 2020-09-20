@@ -25,7 +25,7 @@ Suppose you have hundreds of files, and most of these are copies of passports, c
 
 ![OCR invoice pdf image](https://raw.githubusercontent.com/healzer/PyCRM/master/git_assets/ocr_demo2.png)
 
-Using the extracted text/keywords we can start labeling/processing these files as we wish. Keep in mind that OCR is pretty good but it's not perfect. If your target keyword(s) are not found then it's a good practice to manually process file(s).
+Using the extracted text/keywords we can process these files according to our own business rules, such as rename/copy/move/backup; but we can also send/upload these files to some other pipeline for further processing. Keep in mind that OCR is pretty good but it's not perfect, it works best when images are clear and don't contain strange characters. Most langauges are supported.
 
 #### OCR usage
 
