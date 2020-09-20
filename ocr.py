@@ -31,5 +31,13 @@ def clean(txt):
 if __name__ == "__main__":
   import sys
   import re
-  print( clean( process(sys.argv[1]) ) )
+  file = sys.argv[1]
+  pdf_method = 0
+  pdf_res = 200
+  if len(sys.argv) >= 3:
+    pdf_method = int(sys.argv[2])
+  if len(sys.argv) >= 4:
+    pdf_res = int(sys.argv[3])
+
+  print( clean( process(file, pdf_method, pdf_res) ) )
     
