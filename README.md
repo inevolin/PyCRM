@@ -25,22 +25,28 @@ Suppose you have hundreds of files, and most of these are copies of passports, c
 
 ![OCR invoice pdf image](https://raw.githubusercontent.com/healzer/PyCRM/master/git_assets/ocr_demo2.png)
 
-Using the extracted text/keywords we can process these files according to our own business rules, such as rename/copy/move/backup; but we can also send/upload these files to some other pipeline for further processing. Keep in mind that OCR is pretty good but it's not perfect, it works best when images are clear and don't contain strange characters. Most langauges are supported.
+Using the extracted text/keywords we can process these files according to our own business rules, such as rename/copy/move/backup; but we can also send/upload these files to some other pipeline for further processing. Keep in mind that OCR is pretty good but it's not perfect, it works best when images are clear and don't contain strange characters. Most languages are supported.
 
 #### OCR usage
 
 Here's a basic way of using the OCR library (`ocr.py`) in your own workflow.
 ```
 import ocr
+
 your_file = './demo_files/doc1.pdf'
-out = ocr.process(your_file)
-if 'CONTRACT' in out:
+text = ocr.process(your_file)
+
+# business rule
+if 'CONTRACT' in text:
   ...
 else:
   ...
 ```
 
+Have a look inside the `demo_files` directory for more demo files.
+
 #### OCR installation
+
 To use the OCR library we have to install several dependencies:
 ```
 apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev libmagickwand-dev
