@@ -6,7 +6,7 @@ This repository is dedicated to solving various (complex) problems using softwar
 Remember that well-organized businesses face less issues and have a higher productivity, especially when it comes to client, document and data management. It is essential to have structure and discipline within your organization, no matter your role in that company.
 
 ## Requirements
-You should use a Linux system with Python 3.6+
+You should use a Linux system with Python 3.6+ with pip.
 Other operating systems should work as well, but you'll need to manually figure out how to install 3rd-party dependencies.
 
 ## Document Management
@@ -41,14 +41,14 @@ else:
 ```
 
 #### OCR installation
-To use the OCR library we have to install its dependencies.
+To use the OCR library we have to install several dependencies:
 ```
-sudo apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev
+apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev
 
-pip install pytesseract
-pip install wand
-pip install textract
-pip install pillow
+python3 -m pip install pytesseract
+python3 -m pip install wand
+python3 -m pip install textract
+python3 -m pip install pillow
 ```
 
 # Support
