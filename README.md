@@ -45,6 +45,16 @@ else:
 
 Have a look inside the `demo_files` directory for more demo files.
 
+#### OCR API
+```python
+def process(file, pdf_method=0, pdf_res=200):
+# file: target file path (relative or absolute)
+# pdf_method:
+## 0 : shallow pdf (plain) text extraction
+## 1 : deep pdf text extraction by converting pdf to an image and applying OCR on that image
+# pdf_res: used image resolution when pdf_method=1. Lower resolution is quicker but less accurate (default 200).
+```
+
 #### OCR installation
 
 To use the OCR library we have to install several dependencies:
@@ -69,11 +79,11 @@ change this to:
 ```
 now save and close the file.
 
-Now you can test the installation by running:
+You can test the installation by running:
 ```
 python3 ocr_tests.py
 ```
-This will run several OCR default tests, which should all complete successfully, if anything went wrong during the installation you should see some error messages.
+This will run several OCR default tests, which should all complete successfully. If anything went wrong during the installation you should see relevant error messages.
 
 # Support
 For questions, problems and inquiries reach out to Ilya Nevolin at ilja.nevolin@gmail.com 
