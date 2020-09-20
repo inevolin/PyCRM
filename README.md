@@ -43,7 +43,7 @@ else:
 #### OCR installation
 To use the OCR library we have to install several dependencies:
 ```
-apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev
+apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev libmagickwand-dev
 
 python3 -m pip install pytesseract
 python3 -m pip install wand
