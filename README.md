@@ -17,7 +17,7 @@ It's not always easy to manage files, some businesses simply dump all files into
 
 Regular text-based files can easily be read and parsed. But the OCR library allows us to easily and quickly parse text from image, pdf and docx files. The text/keywords obtained from these files can be used for labeling/processing files automatically.
 
-Suppose you have hundreds of files, and most of these are copies of passports, contracts and invoices. Some are images were taken by phone, some were scanned images, some are PDF files containing images, some are text-based PDF files. The demo screenshots below illustrate how we can extract text/keywords from these kinds of documents.
+Suppose you have hundreds of files, and most of these are copies of passports, contracts and invoices. Some images were made by phone, some were scanned, some are PDF files containing text and/or images. The demo screenshots below illustrate how we can extract text/keywords from these kinds of documents.
 
 #### OCR in action:
 
