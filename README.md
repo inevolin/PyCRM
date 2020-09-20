@@ -30,7 +30,7 @@ Using the extracted text/keywords we can process these files according to our ow
 #### OCR usage
 
 Here's a basic way of using the OCR library (`ocr.py`) in your own workflow.
-```
+```python
 import ocr
 
 your_file = './demo_files/doc1.pdf'
