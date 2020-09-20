@@ -51,5 +51,15 @@ python3 -m pip install textract
 python3 -m pip install pillow
 ```
 
+Finally we need to adjust a setting in the file `/etc/ImageMagick-6/policy.xml`. Near the bottom you will find the line:
+```<policy domain="coder" rights="none" pattern="PDF" />```
+change this to:
+```<policy domain="coder" rights="read" pattern="PDF" />```
+now save and close the file.
+
+Now you can test the installation by running:
+```python3 ocr_tests.py```
+This will run several OCR default tests, which should all complete successfully, if anything went wrong during the installation you should see some error messages.
+
 # Support
 For questions, problems and inquiries reach out to Ilya Nevolin at ilja.nevolin@gmail.com 
