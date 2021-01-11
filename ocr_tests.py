@@ -36,18 +36,5 @@ out = ocr.process(testfile)
 assert 'contract' in out and 'Party A' in out and 'Party B' in out
 print('OK!')
 
-testfile = './demo_files/pass1.jpg'
-print('testing: %s' % testfile)
-out = ocr.process(testfile)
-assert 'PASSPORT' in out and 'CANADA' in out
-print('OK!')
-
-testfile = './demo_files/pass2.jpg'
-print('testing: %s' % testfile)
-out = ocr.process(testfile)
-assert 'U.S.A' in out
-print('OK!')
-
-
 
 print('All tests succeeded!')
