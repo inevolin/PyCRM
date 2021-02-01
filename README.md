@@ -83,5 +83,11 @@ python3 ocr_tests.py
 ```
 This will run several OCR default tests, which should all complete successfully. If anything went wrong during the installation you should see relevant error messages.
 
-# Support
-For questions, problems and inquiries reach out to Ilya Nevolin at ilja.nevolin@gmail.com 
+## Contact
+
+For enquiries or issues get in touch with me:
+
+Name: [Ilya Nevolin](https://www.linkedin.com/in/iljanevolin/)
+
+Email: ilja.nevolin@gmail.com
+
