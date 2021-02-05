@@ -92,6 +92,10 @@ python3 ocr_tests.py
 ```
 This will run several OCR default tests, which should all complete successfully. If anything went wrong during the installation you should see relevant error messages.
 
+#### Extra
+
+You can extend the main dashboard with OCR capabilities, allowing you to access the camera on your device and transcribe text on the fly. This is illustrated in another repository https://github.com/healzer/WebOCR
+
 ## Contact
 
 For enquiries or issues get in touch with me:
